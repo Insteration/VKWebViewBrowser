@@ -50,6 +50,7 @@
                     </view>
                     <connections>
                         <outlet property="addressBarTextField" destination="ve5-n0-79u" id="w3Y-Dq-JG9"/>
+                        <outlet property="webView" destination="g6u-hw-TqT" id="0bL-l6-ggJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

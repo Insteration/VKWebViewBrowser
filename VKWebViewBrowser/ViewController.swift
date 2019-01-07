@@ -12,9 +12,12 @@ import WebKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var addressBarTextField: UITextField!
+    @IBOutlet weak var webView: WKWebView!
     
     @IBAction func addressBar(_ sender: UITextField) {
-        
+        let url = URL(string: addressBarTextField.text!)
+        let urlRequest = URLRequest(url: url!)
+        webView.load(urlRequest)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
