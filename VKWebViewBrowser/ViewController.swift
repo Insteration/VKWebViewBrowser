@@ -15,10 +15,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var webView: WKWebView!
     
     @IBAction func addressBar(_ sender: UITextField) {
-        let url = URL(string: addressBarTextField.text!)
+        let url = URL(string: "https://\(addressBarTextField.text!)")
         let urlRequest = URLRequest(url: url!)
         webView.load(urlRequest)
+        print(urlRequest)
+        print(url)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
