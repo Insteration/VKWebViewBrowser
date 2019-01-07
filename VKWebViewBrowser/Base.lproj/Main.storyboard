@@ -23,6 +23,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="addressBar:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="4Cf-hz-Qrb"/>
+                                </connections>
                             </textField>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6u-hw-TqT">
                                 <rect key="frame" x="16" y="58" width="343" height="589"/>
@@ -45,6 +48,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="addressBarTextField" destination="ve5-n0-79u" id="w3Y-Dq-JG9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
